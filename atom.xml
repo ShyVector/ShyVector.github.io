@@ -8,7 +8,84 @@
     <author>
       <name>Shy_Vector</name>
     </author>
-    <updated>2024-10-05T15:25:38.000Z</updated>
+    <updated>2024-10-06T13:20:58.000Z</updated>
+    <entry>
+        <id>http://example.com/2024/10/06/GSLA%20Chapter%202/</id>
+        <title>GSLA Chapter 2 Problem Set (Optional)</title>
+        <link rel="alternate" href="http://example.com/2024/10/06/GSLA%20Chapter%202/"/>
+        <content type="html">&lt;h3 id=&#34;Problem-Set-2-1&#34;&gt;&lt;a href=&#34;#Problem-Set-2-1&#34; class=&#34;headerlink&#34; title=&#34;Problem Set 2.1&#34;&gt;&lt;/a&gt;Problem Set 2.1&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Find the two components of $A \boldsymbol{x}$ by rows or by columns:&lt;/em&gt;&lt;br&gt;$$&lt;br&gt;  \begin{bmatrix}2 &amp;amp; 3 \ 5 &amp;amp; 1\end{bmatrix}\begin{bmatrix}4 \ 2\end{bmatrix} \quad \text{and} \quad \begin{bmatrix}3 &amp;amp; 6 \ 6 &amp;amp; 12\end{bmatrix} \begin{bmatrix} 2 \ -1\end{bmatrix} \quad \text{and} \quad \begin{bmatrix}1 &amp;amp; 2 &amp;amp; 4 \ 2 &amp;amp; 0 &amp;amp; 1\end{bmatrix}\begin{bmatrix}3 \ 1 \ 1\end{bmatrix}.&lt;br&gt;$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$\begin{bmatrix*}2 &amp;amp; 3 \ 5 &amp;amp; 1\end{bmatrix*}\begin{bmatrix*}4 \ 2\end{bmatrix*} &amp;#x3D; \begin{bmatrix*} 2 \cdot 4 + 3 \cdot 2 \ 5 \cdot 4 + 1 \cdot 2\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}14 \ 22\end{bmatrix*}$&lt;/p&gt;
+&lt;p&gt;$\begin{bmatrix*}3 &amp;amp; 6 \ 6 &amp;amp; 12\end{bmatrix*}\begin{bmatrix*}2 \ -1\end{bmatrix*} &amp;#x3D; \begin{bmatrix*} 3 \cdot 2 + 6 \cdot (-1) \ 6 \cdot 2 + 12 \cdot (-1)\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}0 \ 0\end{bmatrix*}$&lt;/p&gt;
+&lt;p&gt;$\begin{bmatrix}1 &amp;amp; 2 &amp;amp; 4 \ 2 &amp;amp; 0 &amp;amp; 1\end{bmatrix}\begin{bmatrix}3 \ 1 \ 1\end{bmatrix} &amp;#x3D; \begin{bmatrix*}1 \cdot 3 + 2 \cdot 1 + 4 \cdot 1 \ 2 \cdot 3 + 0 \cdot 1 + 1 \cdot 1\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}9 \ 7\end{bmatrix*}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;(a) What 2 by 2 matrix $R$ rotates every vector by 90°? $R$ times $\begin{bmatrix}x \ y\end{bmatrix}$ is $\begin{bmatrix}y \ -x\end{bmatrix}$.&lt;/em&gt;&lt;br&gt; &lt;em&gt;(b) What 2 by 2 matrix $R^2$ rotates every vector by 180°?&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br&gt;(a) Note that $$\begin{bmatrix*}0 &amp;amp; 1 \ -1 &amp;amp; 0\end{bmatrix*}\begin{bmatrix*}x \ y\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}y \ -x\end{bmatrix*}$$so we get $R &amp;#x3D; \begin{bmatrix*}0 &amp;amp; 1 \ -1 &amp;amp; 0\end{bmatrix*}$.&lt;/p&gt;
+&lt;p&gt;(b) For every vector $\begin{bmatrix*}x \ y\end{bmatrix*}$, we note that it will become vector $\begin{bmatrix*}-x \ -y\end{bmatrix*}$ after rotating 180°. Since $$\begin{bmatrix*}[r]-1 &amp;amp; 0 \ 0 &amp;amp; -1\end{bmatrix*}\begin{bmatrix*}x \ y\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}-x \ -y\end{bmatrix*}$$we get $R^2 &amp;#x3D; \begin{bmatrix*}[r]-1 &amp;amp; 0 \ 0 &amp;amp; -1\end{bmatrix*}$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Suppose $\boldsymbol{u}$ and $\boldsymbol{v}$ are the first two columns of a 3 by 3 matrix $A$. Which third columns $\boldsymbol{w}$ would make this matrix singular? Describe a typical column picture of $A \boldsymbol{x} &amp;#x3D; \boldsymbol{b}$ in that singular case, and a typical row picture (for a random $\boldsymbol{b}$).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br&gt;$A$ is singular as long as $\boldsymbol{w}$ is a linear combination of $\boldsymbol{u}$ and $\boldsymbol{v}$, because in this case $\boldsymbol{u}$, $\boldsymbol{v}$, and $\boldsymbol{w}$ are dependent.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;The Row Picture of $A$&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;The Column Picture of $A$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Problem-Set-2-2&#34;&gt;&lt;a href=&#34;#Problem-Set-2-2&#34; class=&#34;headerlink&#34; title=&#34;Problem Set 2.2&#34;&gt;&lt;/a&gt;Problem Set 2.2&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;What test on $b_1$ and $b_2$ decides whether these two equations allow a solution? How many solutions will they have? Draw the column picture for $\boldsymbol{b} &amp;#x3D; (1, 2)$ and $(1, 0)$.&lt;/em&gt;&lt;br&gt;$$&lt;br&gt;  \begin{aligned}&lt;br&gt;  3x - 2y &amp;amp;&amp;#x3D; b_1 \&lt;br&gt;  6x - 4y &amp;amp;&amp;#x3D; b_2&lt;br&gt;  \end{aligned}&lt;br&gt;$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br&gt;Note that the second equation can be transformed into $3x - 2y &amp;#x3D; \frac{1}{2}b_2$, which is also equal to $b_1$. So these two equations allow infinitely many solutions when $2b_1 &amp;#x3D; b_2$, and allow no solution when $2b_1 \ne b_2$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;em&gt;Elimination in the usual order gives what matrix $U$ and what solution to this “lower triangular” system? We are really solving by forward substitution:&lt;/em&gt;&lt;br&gt;$$&lt;br&gt;  \begin{aligned}&lt;br&gt;  &amp;amp;3x &amp;amp;&amp;#x3D; 3 \&lt;br&gt;  &amp;amp;6x + 2y &amp;amp;&amp;#x3D; 8 \&lt;br&gt;  &amp;amp;9x - 2y + z &amp;amp;&amp;#x3D; 9&lt;br&gt;  \end{aligned}&lt;br&gt;$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br&gt;$\begin{bmatrix*}A &amp;amp; \boldsymbol{b}\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}3 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 \ 6 &amp;amp; 2 &amp;amp; 0 &amp;amp; 8 \ 9 &amp;amp; -2 &amp;amp; 1 &amp;amp; 9\end{bmatrix*} \rightarrow \begin{bmatrix*}3 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 \ 0 &amp;amp; 2 &amp;amp; 0 &amp;amp; 2 \ 0 &amp;amp; -2 &amp;amp; 1 &amp;amp; 0\end{bmatrix*} \rightarrow \begin{bmatrix*}3 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 \ 0 &amp;amp; 2 &amp;amp; 0 &amp;amp; 2 \ 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 2\end{bmatrix*} &amp;#x3D; \begin{bmatrix*}U &amp;amp; \boldsymbol{c}\end{bmatrix*}$.&lt;/p&gt;
+&lt;p&gt;So $U &amp;#x3D; \begin{bmatrix*}3 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 2 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; 1\end{bmatrix*}$, $\boldsymbol{c} &amp;#x3D; \begin{bmatrix*}3 \ 2 \ 2\end{bmatrix*}$. That means $\left{\begin{align*}3x &amp;amp;&amp;#x3D; 3 \ 2y &amp;amp;&amp;#x3D; 2 \ z &amp;amp;&amp;#x3D; 2\end{align*}\right.$. We get $$\begin{cases}&lt;br&gt; x &amp;#x3D; 1 \&lt;br&gt; y &amp;#x3D; 1 \&lt;br&gt; z &amp;#x3D; 2&lt;br&gt; \end{cases}$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;Problem-Set-2-3&#34;&gt;&lt;a href=&#34;#Problem-Set-2-3&#34; class=&#34;headerlink&#34; title=&#34;Problem Set 2.3&#34;&gt;&lt;/a&gt;Problem Set 2.3&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Which three matrices $E_{21}$, $E_{31}$, $E_{32}$ put $A$ into triangular form $U$? Multiply those $E$’s to get one matrix $M$ that does elimination: $MA&amp;#x3D;U$.&lt;/em&gt;&lt;br&gt;$$&lt;br&gt;A&amp;#x3D;\begin{bmatrix}1 &amp;amp; 1 &amp;amp; 0 \ 4 &amp;amp; 6 &amp;amp; 1 \ -2 &amp;amp; 2 &amp;amp; 0\end{bmatrix} \quad \text{and} \quad E_{32}E_{31}E_{21}A&amp;#x3D;U&lt;br&gt;$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br&gt;To eliminate $a_{21}$, $A$ need a multiplier $\ell_{21} &amp;#x3D; a_{21}&amp;#x2F;a_{11} &amp;#x3D; 4$ to do subtraction, then $E_{21} &amp;#x3D; \begin{bmatrix*}1 &amp;amp; 0 &amp;amp; 0 \ -4 &amp;amp; 1 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; 1\end{bmatrix*}$.&lt;/p&gt;
+&lt;p&gt;To eliminate $a_{31}$, $A$ need a multiplier $\ell_{31} &amp;#x3D; a_{31}&amp;#x2F;a_{11} &amp;#x3D; -2$ to do subtraction, then $E_{31} &amp;#x3D; \begin{bmatrix*}1 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 1 &amp;amp; 0 \ 2 &amp;amp; 0 &amp;amp; 1\end{bmatrix*}$.&lt;/p&gt;
+&lt;p&gt;To eliminate $a_{32}$, $A$ need a multiplier $\ell_{32} &amp;#x3D; a_{32}&amp;#x2F;a_{22} &amp;#x3D; 1&amp;#x2F;3$ to do subtraction, then $E_{21} &amp;#x3D; \begin{bmatrix*}1 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 1 &amp;amp; 0 \ 0 &amp;amp; -1&amp;#x2F;3 &amp;amp; 1\end{bmatrix*}$.&lt;br&gt;We get $M &amp;#x3D; E_{32}E_{31}E_{21} &amp;#x3D; \begin{bmatrix*}1 &amp;amp; 0 &amp;amp; 0 \ -4 &amp;amp; 1 &amp;amp; 0 \ 2 &amp;amp; -1&amp;#x2F;3 &amp;amp; 1\end{bmatrix*}$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;em&gt;Multiply these matrices:&lt;/em&gt;&lt;br&gt;$$&lt;br&gt;\begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix}\begin{bmatrix}1&amp;amp;2&amp;amp;3\4&amp;amp;5&amp;amp;6\7&amp;amp;8&amp;amp;9\end{bmatrix}\begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix} \qquad \qquad \begin{bmatrix}1&amp;amp;0&amp;amp;0\-1&amp;amp;1&amp;amp;0\-1&amp;amp;0&amp;amp;1\end{bmatrix}\begin{bmatrix}1&amp;amp;2&amp;amp;3\1&amp;amp;3&amp;amp;1\1&amp;amp;4&amp;amp;0\end{bmatrix}&lt;br&gt;$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br&gt;The first matrix&lt;br&gt;$$&lt;br&gt;\begin{aligned}\begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix}\begin{bmatrix}1&amp;amp;2&amp;amp;3\4&amp;amp;5&amp;amp;6\7&amp;amp;8&amp;amp;9\end{bmatrix}\begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix} &amp;amp;&amp;#x3D; \left(\begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix}\begin{bmatrix}1&amp;amp;2&amp;amp;3\4&amp;amp;5&amp;amp;6\7&amp;amp;8&amp;amp;9\end{bmatrix}\right) \begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix} \\ &amp;amp;&amp;#x3D; \begin{bmatrix}7 &amp;amp; 8 &amp;amp; 9 \ 4 &amp;amp; 5 &amp;amp; 6 \ 1 &amp;amp; 2 &amp;amp; 3\end{bmatrix}\begin{bmatrix}0&amp;amp;0&amp;amp;1\0&amp;amp;1&amp;amp;0\1&amp;amp;0&amp;amp;0\end{bmatrix} \\ &amp;amp;&amp;#x3D; \begin{bmatrix} 9 &amp;amp; 8 &amp;amp; 7 \ 6 &amp;amp; 5 &amp;amp; 4 \ 3 &amp;amp; 2 &amp;amp; 1 \end{bmatrix}\end{aligned}&lt;br&gt;$$&lt;br&gt;The second matrix&lt;br&gt;$$&lt;br&gt; \begin{bmatrix}1&amp;amp;0&amp;amp;0\-1&amp;amp;1&amp;amp;0\-1&amp;amp;0&amp;amp;1\end{bmatrix}\begin{bmatrix}1&amp;amp;2&amp;amp;3\1&amp;amp;3&amp;amp;1\1&amp;amp;4&amp;amp;0\end{bmatrix} &amp;#x3D; \begin{bmatrix}1 &amp;amp; 2 &amp;amp; 3 \ 0 &amp;amp; 1 &amp;amp; -2 \ 0 &amp;amp; 2 &amp;amp; -3\end{bmatrix}&lt;br&gt;$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;If $AB &amp;#x3D; I$ and $BC &amp;#x3D; I$ use the associative law to prove $A &amp;#x3D; C$.&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Proof&lt;/strong&gt;&lt;br&gt;$$&lt;br&gt;A &amp;#x3D; AI &amp;#x3D; A(BC) &amp;#x3D; (AB)C &amp;#x3D; IC &amp;#x3D; C&lt;br&gt;$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/" />
+        <category term="线性代数" scheme="http://example.com/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" />
+        <category term="GSLA" scheme="http://example.com/tags/GSLA/" />
+        <updated>2024-10-06T13:20:58.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2024/10/05/GSLA%20Chapter%201/</id>
         <title>GSLA Chapter 1 Problem Set (Optional)</title>
